@@ -36,4 +36,4 @@ wails build
 ./build/bin/SyBookTracker
 
 # Move into path on linux
-sudo mv /build/bin/SyBookTracker /usr/local/bin/
+sudo mv build/bin/SyBookTracker /usr/local/bin/
