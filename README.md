@@ -27,19 +27,13 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/booktracker.git
-cd booktracker
+git clone https://github.com/SyRox-game/SyBookTracker.git
+cd SyBookTracker
 
-# Install frontend dependencies
-cd frontend
-npm install
-
-# Build frontend
-npm run build
-
-# Build the Wails app
-cd ..
 wails build
 
 # Run the app
-./build/bin/BookTracker
+./build/bin/SyBookTracker
+
+# Move into path on linux
+sudo mv /build/bin/SyBookTracker /usr/local/bin/
