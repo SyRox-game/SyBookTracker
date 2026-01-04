@@ -1,19 +1,45 @@
-# README
+# BookTracker 📚✍️
 
-## About
 
-This is the official Wails React-TS template.
+## Features
+-Track your writing per day
+-How many words your wrote per day
+-How many words you are currently at
+---
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+## Tech Stack
 
-## Live Development
+- **Frontend:** React-ts
+- **Backend:** Go
+- **Desktop:** Wails
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+---
 
-## Building
+## Installation
 
-To build a redistributable, production mode package, use `wails build`.
+### Prerequisites
+
+- [Go](https://golang.org/dl/) ≥ 1.21
+- [Node.js](https://nodejs.org/) ≥ 18
+- [Wails CLI](https://wails.io/docs/gettingstarted/installation)
+
+### Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/booktracker.git
+cd booktracker
+
+# Install frontend dependencies
+cd frontend
+npm install
+
+# Build frontend
+npm run build
+
+# Build the Wails app
+cd ..
+wails build
+
+# Run the app
+./build/bin/BookTracker
